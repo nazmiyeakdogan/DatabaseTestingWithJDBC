@@ -1,0 +1,23 @@
+
+
+ a) Projenin amacı : JDBC yazılan sorguyla ApachePOI kullanarak TechnoStudyDB veriyi excele aktarma.
+
+ b) Proje detayları:
+
+    * Projede, MySQL Connections üzerinden TechnoStudyDB mevcut tablolardaki verilerle çalışıldı.
+
+    * DB_Utility class da DBConnectionOpen() methodu ile connection işlemi, DBConnectionClose() methodu ile close işlemi gerçekleştirildi.
+
+    * test1() methodu ile yazılan sorguyla 'actor' tablosundaki tüm veriler, ApachePOI kullanarak oluşturulan excel deki 'actor1' isimli sheete yazdırıldı.
+
+    * test2() method ile actor tablosundaki first_name 'A' ile başlayan kişiler alfabetik sıraya göre ve last_name bilgileriyle beraber test1() de
+
+      oluşturulan excele 'actor2' isminde sheet eklenerek yazdırıldı.
+
+
+
+
+
+
+
+

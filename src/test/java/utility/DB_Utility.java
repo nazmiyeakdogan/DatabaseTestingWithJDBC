@@ -23,7 +23,7 @@ public class DB_Utility {
         String password = "'\"-LhCB'.%k[4S]z";
 
         try {
-            connection = DriverManager.getConnection(hostUrl, username, password); // bağlantıya click  1.madde
+            connection = DriverManager.getConnection(hostUrl, username, password); // bağlantıya click
             statement = connection.createStatement(); // sorguları çalıştırmak için sorgu gönderme ortamı
         }catch (Exception e)
         {
