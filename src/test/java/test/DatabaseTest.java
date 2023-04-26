@@ -63,7 +63,11 @@ public class DatabaseTest extends DB_Utility {
     @Test
     public void test2() throws SQLException, IOException {
 
-        ResultSet rs = statement.executeQuery("select first_name from actor where first_name like 'A%';");
+        ResultSet rs = statement.executeQuery(
+                "select first_name, last_name from actor\n" +
+                "where first_name like 'A%'\n" +
+                "order by first_name ;");
+
         ResultSetMetaData rsmd = rs.getMetaData();
 
         String path = "src/test/java/test/actor.xlsx";
